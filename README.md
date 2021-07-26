@@ -4,7 +4,13 @@ This travel website called Travel.Lah. My goal for making this website because i
 
 This website contains several sections such as :
 <ul>
-  <li>Header</li>
+  <li>Header
+    <ul>
+      <li>Logo</li>
+      <li>Navbar</li>
+      <li>Jumbotron</li>
+    </ul>
+  </li>
   <li>Main Content
     <ul>
       <li>About Us</li>
@@ -16,4 +22,5 @@ This website contains several sections such as :
   <li>Aside</li>
   <li>Footer</li>
 </ul> 
-I didn't not only make this website on desktop screen, but also on mobile screen without using any framework, which is good to train your HTML, CSS and JS skills. 
+
+I didn't not only make this website on desktop screen, but also on mobile screen without using any framework. For styling i was only using CSS Flexbox
