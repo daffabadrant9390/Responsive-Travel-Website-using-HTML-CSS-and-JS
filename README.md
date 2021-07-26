@@ -1,6 +1,6 @@
-### Responsive-Travel-Website-using-HTML-CSS-and-JS
+## Responsive-Travel-Website-using-HTML-CSS-and-JS
 
-This travel website called Travel.Lah. My goal for making this website because i want to introduce the best tourism destinations in Indonesia to all of the traveller over the world. So that they will be interested to have a tour in Indonesia with their friends or family.
+This travel website called <strong>Travel.Lah</strong>. My goal for making this website because i want to introduce the best tourism destinations in Indonesia to all of the traveller over the world. So that they will be interested to have a tour in Indonesia with their friends or family.
 
 This website contains several sections such as :
 <ul>
