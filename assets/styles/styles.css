@@ -1,0 +1,956 @@
+/* Playfair Display Font */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap");
+
+/* Roboto Display Font */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Roboto:wght@100;400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-image: url("../images/image\ 1920x1080\ \(1\).png");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  padding: 20px 60px 0 60px;
+  min-height: 8vh;
+}
+
+.nav-logo {
+  color: #f0f3fa;
+  cursor: pointer;
+}
+
+.nav-links li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 14px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+  transition: all 0.2s ease-in-out;
+  color: #f0f3fa;
+}
+
+.nav-links li a:hover {
+  font-weight: 700;
+}
+
+.nav-links li a.active {
+  font-weight: 700;
+}
+
+.burger {
+  display: none;
+}
+
+.burger .line {
+  width: 28px;
+  height: 3px;
+  background-color: #f0f3fa;
+  margin: 5px;
+}
+
+.jumbotron {
+  display: flex;
+  flex-direction: column;
+  padding: 100px 60px;
+}
+
+.jumbotron .jumbotron-heading h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 50px;
+  color: #f0f3fa;
+  line-height: 1.5em;
+}
+
+.jumbotron .jumbotron-subheading p {
+  font-family: "Roboto", sans-serif;
+  margin-top: 12px;
+  font-size: 14px;
+  color: #f0f3fa;
+  line-height: 2em;
+}
+
+.jumbotron .btn-get-started {
+  width: 150px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f3fa;
+  margin-top: 60px;
+  cursor: pointer;
+
+  transition: all 0.3s ease-in-out;
+}
+
+.jumbotron .btn-get-started a {
+  color: #4a4f53;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.jumbotron .btn-get-started:hover {
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
+}
+
+#about-us {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 60px;
+  background-color: #f0f3fa;
+}
+
+#about-us .title-sub {
+  flex-grow: 1;
+  width: 50%;
+}
+
+#about-us .title-sub h2 {
+  font-size: 30px;
+  font-weight: 500;
+  font-family: "Playfair Display", serif;
+}
+
+#about-us .title-sub p {
+  font-size: 14px;
+  font-weight: 400;
+
+  font-family: "Roboto", sans-serif;
+}
+
+#about-us .text {
+  flex-grow: 1;
+  width: 50%;
+}
+
+#about-us .text p {
+  margin-top: 10px;
+  line-height: 1.5em;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  margin-bottom: 40px;
+}
+
+#about-us .text .btn-read-more {
+  width: 120px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #4a4f53;
+  cursor: pointer;
+
+  transition: all 0.3s ease-in-out;
+}
+
+#about-us .text .btn-read-more a {
+  text-decoration: none;
+  color: #4a4f53;
+  font-family: "Roboto", sans-serif;
+}
+
+#about-us .text .btn-read-more:hover {
+  box-shadow: 0 4px 8px 2px rgba(0, 0, 0, 0.2);
+}
+
+#our-advantages {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px;
+  width: 100%;
+}
+
+#our-advantages .title-sub {
+  flex-grow: 1;
+  width: 50%;
+  padding-right: 60px;
+}
+
+#our-advantages .title-sub h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+#our-advantages .title-sub p {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+#our-advantages .title-sub .text {
+  line-height: 1.5em;
+}
+
+#our-advantages .title-sub .text p {
+  margin-bottom: 10px;
+}
+
+#our-advantages .advantages-items {
+  flex-grow: 1;
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#our-advantages .advantages-items .box {
+  width: 50%;
+  /* background-color: salmon; */
+}
+
+#our-advantages .advantages-items .safety {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 40%;
+  height: 180px;
+  background-color: #2b3134;
+  padding: 14px;
+  margin: 0 20px 20px 0;
+}
+
+#our-advantages .advantages-items .safety .img-safety {
+  width: 40px;
+}
+
+#our-advantages .advantages-items .safety h4 {
+  font-family: "Roboto", sans-serif;
+  color: #f0f3fa;
+  font-size: 14px;
+}
+
+#our-advantages .advantages-items .safety p {
+  font-family: "Roboto", sans-serif;
+  color: #4a4f53;
+  font-size: 12px;
+}
+
+#our-advantages .advantages-items .experience {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 40%;
+  height: 180px;
+  background-color: #2b3134;
+  padding: 14px;
+  margin-right: 20px;
+}
+
+#our-advantages .advantages-items .experience .num-experience {
+  color: #f0f3fa;
+  font-family: "Playfair Display", serif;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+#our-advantages .advantages-items .experience h4 {
+  font-family: "Roboto", sans-serif;
+  color: #f0f3fa;
+  font-size: 14px;
+}
+
+#our-advantages .advantages-items .experience p {
+  font-family: "Roboto", sans-serif;
+  color: #4a4f53;
+  font-size: 12px;
+}
+
+#our-advantages .advantages-items .partners {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 40%;
+  height: 180px;
+  background-color: #2b3134;
+  padding: 14px;
+  margin-right: 20px;
+}
+
+#our-advantages .advantages-items .partners .img-partners {
+  width: 40px;
+}
+
+#our-advantages .advantages-items .partners h4 {
+  font-family: "Roboto", sans-serif;
+  color: #f0f3fa;
+  font-size: 14px;
+}
+
+#our-advantages .advantages-items .partners p {
+  font-family: "Roboto", sans-serif;
+  color: #4a4f53;
+  font-size: 12px;
+}
+
+#our-advantages .advantages-items .hotels {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 40%;
+  height: 180px;
+  background-color: #2b3134;
+  padding: 14px;
+  margin-right: 20px;
+}
+
+#our-advantages .advantages-items .hotels .img-hotels {
+  width: 40px;
+}
+
+#our-advantages .advantages-items .hotels h4 {
+  font-family: "Roboto", sans-serif;
+  color: #f0f3fa;
+  font-size: 14px;
+}
+
+#our-advantages .advantages-items .hotels p {
+  font-family: "Roboto", sans-serif;
+  color: #4a4f53;
+  font-size: 12px;
+}
+
+#tours {
+  background: #f0f3fa;
+  padding: 60px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#tours .title-sub {
+  margin-bottom: 40px;
+}
+
+#tours .title-sub h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+#tours .title-sub p {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+#tours .tour-items .tour-cards {
+  display: flex;
+}
+
+#tours .tour-items .tour-cards:nth-child(1),
+.tour-cards:nth-child(2) {
+  margin-bottom: 80px;
+}
+
+#tours .tour-items .tour-cards .tour-explanations {
+  width: 50%;
+  padding-right: 40px;
+}
+
+#tours .tour-items .tour-cards .tour-explanations:nth-child(2) {
+  width: 50%;
+  padding-right: 40px;
+}
+
+#tours .tour-items .tour-cards .tour-explanations h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+#tours .tour-items .tour-cards .tour-explanations p {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  line-height: 1.5em;
+}
+
+#tours .tour-items .tour-cards .tour-explanations .program-list p {
+  margin-bottom: 8px;
+}
+
+#tours .tour-items .tour-cards .tour-explanations .program-list ul {
+  padding: 0 0 0 40px;
+  /* display: inline-block; */
+  margin-bottom: 30px;
+}
+
+#tours .tour-items .tour-cards .tour-explanations .program-list ul li p {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+#tours .tour-items .tour-cards .img-tours {
+  width: 50%;
+}
+
+#tours .tour-items .tour-cards .img-tours img {
+  width: 90%;
+  max-height: 350px;
+  object-fit: cover;
+  object-position: center;
+  box-shadow: 2px 4px 8px 0px rgba(0, 0, 0, 0.8);
+}
+
+#tours .tour-items .tour-cards .tour-explanations .btn-read-more {
+  width: 120px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2b3134;
+  cursor: pointer;
+
+  /* border-radius: 4px; */
+
+  transition: all 0.3s ease-in-out;
+}
+
+#tours .tour-items .tour-cards .tour-explanations .btn-read-more a {
+  color: #f0f3fa;
+  font-size: 13px;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+}
+
+#tours .tour-items .tour-cards .tour-explanations .btn-read-more:hover {
+  box-shadow: 0 4px 8px 2px rgba(0, 0, 0, 0.4);
+}
+
+#gallery {
+  padding: 60px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#gallery .title-sub {
+  margin-bottom: 40px;
+}
+
+#gallery .title-sub h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+#gallery .title-sub p {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+#gallery .gallery-photos {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#gallery .gallery-photos .row-1 {
+  margin-bottom: 40px;
+}
+
+#gallery .gallery-photos .row-1 .photos-1 {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  object-position: center bottom;
+  box-shadow: 2px 4px 8px 0px rgba(0, 0, 0, 0.8);
+}
+
+#gallery .gallery-photos .row-2 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+#gallery .gallery-photos .row-2 .photos-2 {
+  width: 48%;
+  height: 350px;
+  box-shadow: 2px 4px 8px 0px rgba(0, 0, 0, 0.8);
+}
+
+#gallery .gallery-photos .row-2 .photos-3 {
+  width: 48%;
+  height: 350px;
+  box-shadow: 2px 4px 8px 0px rgba(0, 0, 0, 0.8);
+}
+
+#gallery .gallery-photos .row-3 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+#gallery .gallery-photos .row-3 .photos-4 {
+  width: 48%;
+  height: 350px;
+  box-shadow: 2px 4px 8px 0px rgba(0, 0, 0, 0.8);
+}
+
+#gallery .gallery-photos .row-3 .photos-5 {
+  width: 48%;
+  height: 350px;
+  box-shadow: 2px 4px 8px 0px rgba(0, 0, 0, 0.8);
+}
+
+#gallery .gallery-photos .row-4 .photos-6 {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  object-position: center top;
+  box-shadow: 2px 4px 8px 0px rgba(0, 0, 0, 0.8);
+}
+
+#testimonials {
+  display: flex;
+  flex-direction: column;
+  padding: 60px;
+  background-color: #f0f3fa;
+  width: 100%;
+}
+
+#testimonials .title-sub {
+  margin-bottom: 40px;
+}
+
+#testimonials .title-sub h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+#testimonials .title-sub p {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+#testimonials .testimonials-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#testimonials .testimonials-items .testimonials-card {
+  width: 300px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0 4px 8px 2px rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #4a4f53;
+}
+
+#testimonials .testimonials-items .testimonials-card h4 {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #e4e4e4;
+}
+
+#testimonials .testimonials-items .testimonials-card p {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #e4e4e4;
+  opacity: 0.8;
+}
+
+#testimonials .testimonials-items .testimonials-card .trip-info {
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+#testimonials .testimonials-items .testimonials-card .divider {
+  width: 100%;
+  height: 2px;
+  background-color: #f0f3fa;
+  opacity: 0.5;
+}
+
+#personal-data {
+  padding: 60px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #212629;
+}
+
+#personal-data .title-sub {
+  margin-bottom: 40px;
+}
+
+#personal-data .title-sub h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 30px;
+  font-weight: 500;
+  color: #f0f3fa;
+}
+
+#personal-data .title-sub p {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #f0f3fa;
+}
+
+#personal-data .my-profile {
+  display: flex;
+  width: 100%;
+}
+
+#personal-data .my-profile .profile-data {
+  width: 50%;
+}
+
+#personal-data .my-profile .profile-data p::first-letter {
+  font-size: 30px;
+}
+
+#personal-data .my-profile .profile-data p {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 2em;
+  padding-right: 20px;
+  color: #e4e4e4;
+}
+
+#personal-data .my-profile .profile-data table th,
+td {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  padding-top: 20px;
+  color: #e4e4e4;
+}
+
+#personal-data .my-profile .profile-img {
+  width: 50%;
+}
+
+#personal-data .my-profile .profile-img img {
+  width: 90%;
+  height: 400px;
+  object-fit: cover;
+  object-position: center bottom;
+  box-shadow: 0 4px 8px 0px rgba(0, 0, 0, 0.8);
+  border-radius: 4px;
+}
+
+footer {
+  padding: 20px 60px;
+  background-color: #f0f3fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+}
+
+footer p {
+  color: #2b3134;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 1050px) {
+  #testimonials .testimonials-items .testimonials-card {
+    width: 280px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #tours .tour-items .tour-cards .img-tours img {
+    width: 85%;
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  #testimonials .testimonials-items .testimonials-card {
+    width: 250px;
+    height: 380px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #testimonials .testimonials-items {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #testimonials .testimonials-items .testimonials-card {
+    width: 40%;
+    margin: 20px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  #tours .tour-items .tour-cards .img-tours img {
+    height: 80%;
+  }
+
+  #gallery .gallery-photos .row-1 {
+    margin-bottom: 20px;
+  }
+
+  #gallery .gallery-photos .row-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  #gallery .gallery-photos .row-2 .photos-2 {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    object-position: center;
+    box-shadow: 2px 4px 8px 0px rgba(0, 0, 0, 0.8);
+    margin-bottom: 20px;
+  }
+
+  #gallery .gallery-photos .row-2 .photos-3 {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    object-position: center;
+    box-shadow: 2px 4px 8px 0px rgba(0, 0, 0, 0.8);
+  }
+
+  #gallery .gallery-photos .row-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  #gallery .gallery-photos .row-3 .photos-4 {
+    width: 100%;
+    height: 350px;
+    box-shadow: 2px 4px 8px 0px rgba(0, 0, 0, 0.8);
+    margin-bottom: 20px;
+  }
+
+  #gallery .gallery-photos .row-3 .photos-5 {
+    width: 100%;
+    height: 350px;
+    box-shadow: 2px 4px 8px 0px rgba(0, 0, 0, 0.8);
+  }
+}
+
+@media screen and (max-width: 770px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 10vh;
+    height: 90vh;
+    right: 0;
+    background-color: #4a4f53;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 40%;
+
+    transform: translateX(100%);
+    transition: all 0.5s ease-in;
+  }
+
+  nav .burger {
+    display: block;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+
+  nav .burger:hover {
+    transform: scale(1.15);
+  }
+
+  .jumbotron .jumbotron-heading h1 {
+    font-size: 35px;
+  }
+
+  .jumbotron .jumbotron-subheading p {
+    font-size: 12px;
+  }
+
+  .jumbotron .btn-get-started {
+    width: 100px;
+    height: 30px;
+    margin-top: 30px;
+  }
+
+  .jumbotron .btn-get-started a {
+    font-size: 12px;
+  }
+
+  #about-us {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 60px;
+    background-color: #f0f3fa;
+  }
+
+  #about-us .title-sub {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  #about-us .text {
+    width: 100%;
+  }
+
+  #our-advantages {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #our-advantages .title-sub {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  #our-advantages .advantages-items {
+    width: 100%;
+  }
+
+  #tours .tour-items .tour-cards {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #tours .tour-items .tour-cards .tour-explanations {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  #tours .tour-items .tour-cards .tour-explanations:nth-child(2) {
+    width: 100%;
+  }
+  #tours .tour-items .tour-cards:nth-child(2) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  #tours .tour-items .tour-cards .img-tours {
+    width: 100%;
+    float: right;
+  }
+
+  #tours .tour-items .tour-cards .img-tours img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  #testimonials .testimonials-items {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #testimonials .testimonials-items .testimonials-card {
+    width: 100%;
+    margin: 0 0 20px 0;
+  }
+
+  #testimonials .testimonials-items .testimonials-card:nth-child(3) {
+    margin: 0;
+  }
+  #personal-data .my-profile {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #personal-data .my-profile .profile-data {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  #personal-data .my-profile .profile-img {
+    width: 100%;
+  }
+
+  #personal-data .my-profile .profile-img img {
+    width: 100%;
+  }
+}
+
+.nav-active {
+  transform: translateX(0%);
+}
+
+@media screen and (max-width: 500px) {
+  p {
+    font-size: 12px;
+  }
+  .jumbotron .jumbotron-heading h1 {
+    font-size: 26px;
+  }
+
+  .jumbotron .jumbotron-subheading p {
+    font-size: 12px;
+  }
+
+  #our-advantages .advantages-items {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #our-advantages .title-sub {
+    padding-right: 0;
+  }
+
+  #our-advantages .advantages-items .box {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  #testimonials .testimonials-items .testimonials-card .img-users {
+    width: 100px;
+  }
+
+  footer p {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 435px) {
+  footer p {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #testimonials .testimonials-items .testimonials-card .img-users {
+    width: 80px;
+  }
+}
